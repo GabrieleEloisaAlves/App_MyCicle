@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyCicle.MainPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <Grid BackgroundColor="#F1BDB8" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="160"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0"    
+                         BackgroundColor="White"
+                         Padding="10"
+                         Margin="25"
+                         HorizontalOptions="FillAndExpand">
+
+                    <Image Source="logo.png"  />
+                </StackLayout>
+                <ScrollView Grid.Row="1">
+                    <StackLayout   Margin="20"  Padding="1" Spacing="30" >
+
+                        <Button Text="Inicial" Clicked="Btn_Open_Inicial" Style="{StaticResource botaoRosa }" Padding="15" FontSize="20" />
+                        <Button Text="Ginecologista Online" Clicked="Btn_Open_Ginecologista" Style="{StaticResource botaoBranco }" Padding="15" FontSize="20"/>
+                        <Button Text="Dados Pessoais" Clicked="Btn_Open_DadosPessoais" Style="{StaticResource botaoRosa }" Padding="15" FontSize="20" />
+                        <Button Text="Dicas"     Clicked="Btn_Open_Dicas" Style="{StaticResource botaoBranco }" Padding="15" FontSize="20" />
+                        <Button Text="Frases" Clicked="Btn_Open_Frases" Style="{StaticResource botaoRosa }" Padding="15" FontSize="20"/>
+                        <Button Text="Configurações" Clicked="Btn_Open_Configuracoes" Style="{StaticResource botaoBranco }" Padding="15" FontSize="20"/>
+
+
+
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+
+
+    </MasterDetailPage>

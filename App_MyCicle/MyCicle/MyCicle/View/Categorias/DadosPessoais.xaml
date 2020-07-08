@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyCicle.View.Categorias.DadosPessoais">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <StackLayout >
+
+                <Label Text="DADOS PESSOAIS"   HorizontalTextAlignment="Center" FontAttributes="Bold"
+                   Padding="20"  Grid.Column="3"
+                   Grid.Row="10" TextColor="Black" FontSize="23" CharacterSpacing="2" />
+
+            </StackLayout>
+
+            <StackLayout  Padding="15"  >
+            </StackLayout>
+
+            <Label Text="Na aba configurações você preencherá dados que serão exibidos aqui, servindo como um lembrete pessoal"
+                       FontAttributes="None"
+                       FontSize="15"
+                       BackgroundColor="#FFCDD4"
+                       TextColor="#000000"
+                       Padding="10" 
+                   Grid.Row="20" Grid.RowSpan="15"
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+
+            <StackLayout  Padding="18"  >
+            </StackLayout>
+
+            <Image Source="regulador.png"  HorizontalOptions="Center"/>
+
+            <ListView x:Name="ListasDados" HasUnevenRows="True" 
+                      SeparatorColor="Red" Margin="15" 
+                      ItemSelected="ListaDados_ItemSelected">
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <StackLayout>
+
+                                <StackLayout  Padding="8"  >
+
+
+                                    <Label Text="{Binding Data,StringFormat='Data: {0}'}" 
+                                       FontSize="Large" TextColor="Black" />
+
+
+
+                                    <Label Text="{Binding DataMestrual,StringFormat='Data Menstrual: {0}'}" 
+                                       FontSize="Large" TextColor="Black" />
+
+
+
+                                    <Label Text="{Binding Pilula,StringFormat='Pílula Anticoncepcional: {0}'}" 
+                                 FontSize="Large" TextColor="Black" />
+
+
+
+                                    <Label Text="{Binding Consulta,StringFormat='Última Consulta: {0}'}" 
+                                FontSize="Large" TextColor="Black" />
+
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <StackLayout  Padding="10"  >
+            </StackLayout>
+
+
+
+            <Button x:Name="btVoltar" Text="Voltar"
+                        HorizontalOptions="Center"  FontSize="Large"
+                        Clicked="BtVoltar_Clicked" Padding="15"/>
+
+
+
+
+            <StackLayout  Padding="30"  >
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

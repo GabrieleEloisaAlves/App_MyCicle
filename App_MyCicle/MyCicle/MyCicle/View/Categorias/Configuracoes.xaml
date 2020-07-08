@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyCicle.View.Categorias.Configuracoes">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout >
+                <Label Text="CONFIGURAÇÕES"
+                     HorizontalTextAlignment="Center" FontAttributes="Bold"
+                   Padding="15"  Grid.Column="3"
+                   Grid.Row="10" TextColor="Black" FontSize="23" CharacterSpacing="2" />
+
+                
+
+                <Label Text="Informe Abaixo:"
+                  FontAttributes="None"
+                       FontSize="20"
+                     
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+
+                <Label Text="Data"
+                  FontAttributes="None"
+                       FontSize="15"
+                      BackgroundColor="#E4B7BE"
+                       TextColor="#000000"
+                       Padding="10" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+                <StackLayout  Padding="5"  >
+                </StackLayout>
+
+                <Entry x:Name="txtData" Keyboard="Url" Placeholder="dd/mm/aaaa"></Entry>
+
+                <StackLayout  Padding="16"  >
+                </StackLayout>
+
+                <Label Text="Data da última menstruação"
+                  FontAttributes="None"
+                       FontSize="15"
+                      BackgroundColor="#E4B7BE"
+                       TextColor="#000000"
+                       Padding="10" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center" />
+
+                <StackLayout  Padding="5"  >
+                </StackLayout>
+
+                <Entry x:Name="txtDataMestrual" Keyboard="Url" Placeholder="dd/mm/aaaa"></Entry>
+
+                <StackLayout  Padding="16"  >
+                </StackLayout>
+
+                <Label Text="O nome de sua pilula anticoncepcional"
+                  FontAttributes="None"
+                       FontSize="15"
+                      BackgroundColor="#E4B7BE"
+                       TextColor="#000000"
+                       Padding="10" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+                <StackLayout  Padding="5"  >
+                </StackLayout>
+
+                <Entry x:Name="txtPilula" Keyboard="Url" Placeholder="Ex: Ciclo 21 "></Entry>
+
+                <StackLayout  Padding="16"  >
+                </StackLayout>
+
+                <Label Text="Ultima consulta no ginicologista"
+                  FontAttributes="None"
+                       FontSize="15"
+                      BackgroundColor="#E4B7BE"
+                       TextColor="#000000"
+                       Padding="10" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+                <StackLayout  Padding="5"  >
+                </StackLayout>
+
+                <Entry x:Name="txtConsulta" Keyboard="Url" Placeholder="dd/mm/aaaa "></Entry>
+
+                <StackLayout Orientation="Horizontal" Margin="20,0,20,20">
+                    <Button x:Name="btSalvar" Text="Inserir"
+                        Clicked="BtSalvar_Clicked"
+                        HorizontalOptions="FillAndExpand"/>
+
+                    <Button x:Name="btExcluir" Text="Excluir"
+                        Clicked="btExcluir_Clicked"
+                         IsVisible="False"
+                        HorizontalOptions="FillAndExpand"/>
+
+
+                    <Button x:Name="btCancelar" Text="Cancelar"
+                        HorizontalOptions="FillAndExpand"
+                        Clicked="BtCancelar_Clicked"/>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyCicle.View.Categorias1.CicloMenstrual" Title="Videos Ciclo Menstrual">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+
+            <StackLayout  Padding="20"  >
+            </StackLayout>
+
+
+                <Grid Padding="5">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300" />
+                        <RowDefinition Height="300" />
+                        <RowDefinition Height="300" />
+                    </Grid.RowDefinitions>
+
+
+
+
+                    <ImageButton Grid.Row="0" Grid.Column="0"
+                             x:Name="btnInformaçõesdociclo"
+                            
+                           Clicked="Btn_Open_InformacoesdoCiclo" />
+
+                    <ImageButton Grid.Row="0" Grid.Column="1"
+                             x:Name="btnCicloirregular"
+                            
+                           Clicked="Btn_Open_CicloIrregular" />
+
+                    <ImageButton Grid.Row="1" Grid.Column="0"
+                             x:Name="btnHormoniosdociclomenstrual"
+                            
+                           Clicked="Btn_Open_HormoniosdoCicloMenstrual" />
+
+
+                    <ImageButton Grid.Row="1" Grid.Column="1"
+                             x:Name="btnCiclomenstrualposparto"
+                            
+                           Clicked="Btn_Open_CicloMenstrualposParto" />
+
+
+                </Grid>
+
+         
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

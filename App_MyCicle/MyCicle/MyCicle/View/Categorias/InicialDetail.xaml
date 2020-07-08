@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyCicle.View.Categorias.InicialDetail"
+             BackgroundColor="#F1DCE6">
+
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout Padding="1"
+               >
+                <Label Text=""
+                       TextColor="#590202"
+                       Padding="4" />
+
+
+                <Label Text="SEJAM BEM VINDAS"
+                       FontAttributes="Bold"
+                       FontSize="30"
+                       BackgroundColor="#E25E72"
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+                <Label Text=""
+                       Padding="40"  />
+
+                <Image Source="mycicle.png"  Grid.Column="10"/>
+
+                <Label Text=""
+                       TextColor="#590202"
+                       Padding="20"  />
+
+                <Label Text="MY CICLE"
+                       FontSize="40"
+                       BackgroundColor="#E25E72"
+                       FontAttributes="Italic"
+                       TextColor="#000000"
+                       Padding="20" 
+                      CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    </ContentPage>

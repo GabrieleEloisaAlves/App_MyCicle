@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyCicle.App">
+    <Application.Resources>
+        <Style x:Key="botaoRosa" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#AB0209" />
+            <Setter Property="TextColor" Value="#FFF" />
+            <Setter Property="CornerRadius" Value="5" />
+        </Style>
+        <Style x:Key="botaoPreto" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#3E474C" />
+            <Setter Property="TextColor" Value="#FFFFFF" />
+            <Setter Property="CornerRadius" Value="5" />
+        </Style>
+        <Style x:Key="botaoBranco" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="CornerRadius" Value="5" />
+        </Style>
+    </Application.Resources>
+</Application>

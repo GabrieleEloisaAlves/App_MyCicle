@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyCicle.View.Categorias.Frases"
+             BackgroundColor="#F1DCE6">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout >
+                <Label Text="FRASES MOTIVACIONAIS"
+                     HorizontalTextAlignment="Center" FontAttributes="Bold"
+                   Padding="20"  Grid.Column="3"
+                   Grid.Row="10" TextColor="Black" FontSize="23" CharacterSpacing="2" />
+
+                <StackLayout  Padding="10"  >
+                </StackLayout>
+
+
+                <Label Text="A maior prova de amor que um homem pode dar a uma mulher, é paciência na TPM dela."
+                  FontAttributes="None"
+                       FontSize="20"
+                      BackgroundColor="#E25E72"
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+                <StackLayout  Padding="20"  >
+                </StackLayout>
+
+
+                <Label Text="TPM não existe , foi inventada pelos homens da mídia para passarmos como loucas."
+                   FontAttributes="None"
+                       FontSize="20"
+                      BackgroundColor="#E25E72"
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+                <StackLayout  Padding="20"  >
+                </StackLayout>
+
+
+                <Label Text="Seu melhor look é a sua auto estima."
+                    FontAttributes="None"
+                       FontSize="20"
+                      BackgroundColor="#E25E72"
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+                <StackLayout  Padding="20"  >
+                </StackLayout>
+
+
+                <Label Text="Admire a beleza dos outros sem duvidar da sua."
+                    FontAttributes="None"
+                       FontSize="20"
+                      BackgroundColor="#E25E72"
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+                <StackLayout  Padding="20"  >
+                </StackLayout>
+
+
+                <Label Text="Ninguém é como você, esse é seu poder."
+                   FontAttributes="None"
+                       FontSize="20"
+                      BackgroundColor="#E25E72"
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+                <StackLayout  Padding="20"  >
+                </StackLayout>
+
+
+                <Label Text="Ser bonita é estar de bem com a vida."
+                    FontAttributes="None"
+                       FontSize="20"
+                      BackgroundColor="#E25E72"
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+                <StackLayout  Padding="20"  >
+                </StackLayout>
+
+
+                <Label Text="Não aceite menos que você merece."
+                   FontAttributes="None"
+                       FontSize="20"
+                      BackgroundColor="#E25E72"
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+                <StackLayout  Padding="20"  >
+                </StackLayout>
+
+
+                <Label Text="Seja seu próprio padrão de beleza."
+                    FontAttributes="None"
+                       FontSize="20"
+                      BackgroundColor="#E25E72"
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+                <StackLayout  Padding="20"  >
+                </StackLayout>
+
+
+                <Label Text="Só vai dar certo se você tentar."
+                    FontAttributes="None"
+                       FontSize="20"
+                      BackgroundColor="#E25E72"
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+                <StackLayout  Padding="20"  >
+                </StackLayout>
+
+
+                <Label Text="Mulheres felizes brilham mais."
+                   FontAttributes="None"
+                       FontSize="20"
+                      BackgroundColor="#E25E72"
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+                <StackLayout  Padding="12"  >
+                </StackLayout>
+
+                <Button x:Name="btVoltar" Text="Voltar"
+                        HorizontalOptions="Center"  FontSize="Medium"
+                        Clicked="BtVoltar_Clicked" Padding="15"/>
+
+                <StackLayout  Padding="15"  >
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

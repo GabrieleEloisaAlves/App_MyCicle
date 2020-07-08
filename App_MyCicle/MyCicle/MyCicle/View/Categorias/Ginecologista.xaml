@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyCicle.View.Categorias.Ginecologista" Title="Ginecologista Online">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <StackLayout  Padding="15"  >
+            </StackLayout>
+           
+            <Image Source="ginicologista.png"  HorizontalOptions="Center"/>
+
+
+            <Label Text="Veja a seguir videos relacionados a saúde da mulher:"
+                       FontAttributes="None"
+                       FontSize="15"
+                       BackgroundColor="#FFCDD4"
+                       TextColor="#000000"
+                       Padding="20" 
+                       CharacterSpacing="2" HorizontalTextAlignment="Center"/>
+
+            <StackLayout  Padding="25"  >
+            </StackLayout>
+
+            <Grid RowSpacing="50" ColumnSpacing="15" Padding="2">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+
+                <Button Text="Sangramentos" Grid.Row="0" Grid.Column="0" Clicked="Button_Clicked_Sangramentos" Style="{StaticResource botaoRosa}"  Padding="12" FontSize="15" />
+
+                <Button Text="Ovulação" Grid.Row="0" Grid.Column="1" Clicked="Button_Clicked_Ovulacao" Style="{StaticResource botaoRosa}"  Padding="12" FontSize="15" />
+
+                <Button Text="Ciclo Menstrual" Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked_CicloMenstrual" Style="{StaticResource botaoRosa}"  Padding="12" FontSize="15" />
+
+                <Button Text="Corrimento Vaginal" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked_CorrimentoVaginal" Style="{StaticResource botaoRosa}"  Padding="12" FontSize="15" />
+
+                <Button Text="Coletor Menstrual" Grid.Row="2" Grid.Column="0" Clicked="Button_Clicked_ColetorMenstrual" Style="{StaticResource botaoRosa}"  Padding="12" FontSize="15" />
+
+                <Button Text="Anticoncepcionais" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked_Anticoncepcionais" Style="{StaticResource botaoRosa}"  Padding="12" FontSize="15" />
+
+                <Button x:Name="btVoltar" Text="Voltar" Grid.Row="3" Grid.Column="1"  Clicked="BtVoltar_Clicked" Padding="15" FontSize="17" HorizontalOptions="Center" />
+            </Grid>
+
+
+            
+
+           
+                     
+
+        </StackLayout>
+
+
+
+    </ContentPage.Content>
+</ContentPage>
